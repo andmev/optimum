@@ -182,7 +182,7 @@ def check_and_save_model(model: onnx.ModelProto, save_path: Optional[Union[str, 
             all_tensors_to_one_file=True,
             location=external_file_name,
             convert_attribute=True,
-            size_threshold=10_000_000,
+            size_threshold=12_000_000,
         )
         try:
             onnx.checker.check_model(save_path)
